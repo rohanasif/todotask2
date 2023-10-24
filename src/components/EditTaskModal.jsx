@@ -42,7 +42,15 @@ const EditTaskModal = ({
       };
       setTasks(updatedTasks);
       await axios.patch(
-        `http://localhost:3000/tasks/${updatedTasks[taskIndex].id}`
+        `http://localhost:3000/tasks/${updatedTasks[taskIndex].id}`,
+        {
+          title: newTitle,
+          date: newDate,
+          description: newDescription,
+          isImportant: newIsImportant,
+          isCompleted: newIsCompleted,
+          selectedDir: newSelectedDir,
+        }
       );
       setTaskToEdit(null);
       setEditTaskModal(false);
