@@ -6,7 +6,7 @@
       "date": "2222-11-22",
       "description": "asdas",
       "isImportant": false,
-      "isCompleted": false,
+      "isCompleted": true,
       "selectedDir": "Main"
     },
     {
